@@ -1,0 +1,202 @@
+.toast{
+  display: none;
+  min-width: 20vw
+}
+.toast.show {
+    display: block;
+    opacity: 1;
+    position: fixed;
+    z-index: 99999999;
+    margin: 20px;
+    right: 0;
+    top: 3.5rem;
+}
+.swal2-container{
+    z-index: 99999999;
+}
+#preloader2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #C5C6C7;
+}
+
+#preloader2:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #45A29E;
+  border-top-color: #C5C6C7;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-size: smaller;
+    color: #1F2833;
+    font-style: italic;
+}
+.truncate-5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+ .modal-dialog.large {
+    width: 80% !important;
+    max-width: unset;
+  }
+  .modal-dialog.mid-large {
+    width: 50% !important;
+    max-width: unset;
+  }
+  #viewer_modal .btn-close {
+    position: absolute;
+    z-index: 999999;
+    /*right: -4.5em;*/
+    background: unset;
+    color: #C5C6C7;
+    border: unset;
+    font-size: 27px;
+    top: 0;
+}
+#viewer_modal .modal-dialog {
+        width: 80%;
+    max-width: unset;
+    height: calc(90%);
+    max-height: unset;
+}
+  #viewer_modal .modal-content {
+       background: #0B0C10;
+    border: unset;
+    height: calc(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #viewer_modal img,#viewer_modal video{
+    max-height: calc(100%);
+    max-width: calc(100%);
+  }
+  .text-gradient-primary{
+    background-image: linear-gradient( 114.2deg,  #66FCF1 22.6%, #45A29E 67.7% );
+     -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent;
+  }
+  .bg-gradient-1{
+     background-image: linear-gradient( 114.2deg,  #66FCF1 22.6%, #45A29E 67.7% );
+  }
+  .bg-dark{
+    background: #1F2833!important;
+  }
+  #audio-player{
+    position: fixed;
+    bottom: 3.5rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+    z-index: 1032;
+    padding: 0.3em 14em;
+    left: 0%;
+    margin-right: -0%;
+    background: #0B0C10 !important;  
+    backdrop-filter: blur(8.5px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-top: 1px solid rgb(196, 196, 196);
+    border-radius: 0px;
+  }
+  .info-box:hover{
+    --s: 100px;   /* the size of the image */
+    --b: 2px;     /* the border thickness*/
+    --g: 0.1px;    /* the gap */
+    --c: #45A29E; /* the color */
+    outline: var(--b) solid var(--c);
+    outline-offset: var(--g);
+  }
+#mplayer{
+  background: #0B0C10 !important;  
+  color: #0B0C10 !important;  
+}
+
+#butn{
+  border-radius: 30px;
+  font-family: "Arial (sans-serif)";
+  font-style: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: #66FCF1;
+  border: 2px solid #66FCF1;
+  color: white;
+  width:100px;
+}
+#butn2{
+  border-radius: 30px;
+  font-family: "Arial (sans-serif)";
+  font-style: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: white;
+  width:100px;
+
+}
+
+
+.download{
+  border-radius: 30px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(0.5rem, 1vw, 1.2rem);
+  line-height: 20px;
+  margin: 0 4%;
+  padding: 1% 1%;
+  position: absolute;
+  right: 1%;
+
+
+  /* identical to box height */
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: #45A29E;
+  border: 2px solid #45A29E;
+  color: #0B0C10;
+  visibility: hidden;
+}
+
+.download:hover {
+  background: #0B0C10;
+  color: #45A29E;
+  transition-duration: 0.1s;
+}
